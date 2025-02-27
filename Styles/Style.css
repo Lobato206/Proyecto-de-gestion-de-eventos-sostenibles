@@ -1,0 +1,422 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: #f0f0f0;
+  height: 100%;
+  margin: none;
+}
+/*Inicio de barra de navegación*/
+span.Titulo{
+  color:white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 200%;
+
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #00A97F;
+  border-bottom: 2px solid #113a5c ;
+  margin: none;
+  
+}
+
+.nav-links a{
+  text-decoration: none;
+  padding: 10px;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover{
+  color: #ffae00;
+}
+
+a.actual-position{
+  text-decoration:none;
+  padding: 10px;
+  height: 100%;
+  color: #00ccff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+a.actual-position:hover{
+  color: white;
+}
+/*Fin de la barra de navegación*/
+/*Mains*/
+.main-content{
+
+  background: linear-gradient( rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75),rgba(0,0,0,0), rgba(0,0,0,0)), url(../images/background_index.png) no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  text-align: center;
+  margin: none;
+}
+/*Botton de la pagina principal*/
+.beautiful-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #007256, #00A97F);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  text-decoration:none;
+}
+
+.beautiful-button:hover {
+  background: linear-gradient(to bottom, #005a43, #00946f);
+  animation: button-particles 3s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+.beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+ 
+ .texto-section{
+  margin-top: 7%;
+}
+
+.texto-section h1{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.distnace{
+  margin:7%;
+}
+
+/*Lista de eventos*/
+.contenedor{
+  width: auto;
+  display: flex;
+  flex: 1;
+}
+.BarraLateral{
+  width: 12%;
+  background:  #292833;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: inset -1px 1px 5px rgba(0, 0, 0, 0.6); 
+  justify-content: flex-start;
+  align-items: center;
+}
+.BarraLateral h2{
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.BarraLateral ul{
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.BarraLateral ul li{
+ 
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.BarraLateral ul li:hover{
+  background-color: #0f0f11;
+}
+
+
+.BarraLateral ul li a{
+  position: relative;
+  left: 24px;
+}
+
+.BarraLateral h3{
+  color: white;
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.BarraLateral input{
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+.BarraLateral button{
+  display: flex;
+  justify-content: center;
+  margin-top:7px;
+}
+/*tabla de productos*/
+.tabla-productos table{
+  color:#000;
+  border-collapse: collapse;
+  text-align: center;
+  margin:auto;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 150vh; 
+  text-decoration:none;
+}
+
+  /*calculo la anchura de las columnas*/
+.tabla-productos th:nth-child(1) { width: 5% } /*ID*/
+.tabla-productos th:nth-child(3) { width: auto } /*Nombre*/
+.tabla-productos th:nth-child(4) { width: auto} /*Ref*/
+.tabla-productos th:nth-child(5) { width: auto; } /*Categoria*/
+.tabla-productos th:nth-child(6) { width: 8% } /*Precio*/
+.tabla-productos th:nth-child(7) { width: 8% } /*Cantidad*/
+.tabla-productos th:nth-child(9) { width: 8% } /*Acciones*/
+
+/*Registro*/
+.body-registro{
+  display: flex;
+  justify-content: center;/*Para centrar el formulario*/
+  background: #f0f0f0;
+  background-size: cover;/*Para cubrir toda la pagina del color o imagen seleccionado*/
+  align-items: center;
+  flex-direction: column;
+}
+.form-registro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.title-registro {
+  font-size: 28px;
+  color: #00A97F;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title-registro::before,.title-registro::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #54a08d;
+}
+
+.title-registro::before {
+  width: 18px;
+  height: 18px;
+  background-color: #00A97F;
+}
+
+.title-registro::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message-registro, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin-registro {
+
+  text-align: center;
+}
+
+.signin-registro a {
+  color: #b7cdfe;
+}
+
+.signin-registro a:hover {
+  text-decoration: underline #b7cafe;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 32px;
+}
+
+.form-registro label {
+  position: relative;
+}
+
+.form-registro label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form-registro label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form-registro label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form-registro label .input:focus + span,.form label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form-registro label .input:valid + span {
+  color: green;
+  top: 3px;
+  font-size: 0.5em;
+}
+.form-registro label .input:not(:placeholder-shown):invalid + span {
+    color: red;
+    top: 3px;
+    font-size: 0.5em;
+  }
+
+
+.submit-registro {
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #00A97F;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  text-decoration:none;
+}
+
+.submit-registro:hover {
+  background-color: #00795a;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  transform: .3s ease;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+  width: 310px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+z-index: 1;
+border-radius: 10px;
+}
+
+.dropdown-content a {
+padding: 8px 16px;
+text-decoration: none;
+display: block;
+color: rgba(88, 87, 87, 0.822);
+
+
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/*Fin registro*/
